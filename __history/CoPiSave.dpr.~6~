@@ -1,0 +1,25 @@
+program CoPiSave;
+
+// If you aren't using RTTI you can add this to the top of your .dpr file
+// (immediately after program) to remove the extra RTTI information:
+{$IFOPT D-}{$WEAKLINKRTTI ON}{$ENDIF}
+{$RTTI EXPLICIT METHODS([]) PROPERTIES([]) FIELDS([])}
+
+// This will strip the relocation information which is not needed in a .exe.
+// Don't add this to a DLL or package!
+const IMAGE_FILE_RELOCS_STRIPPED               = $0001;
+{$SetPEFlags IMAGE_FILE_RELOCS_STRIPPED}
+
+uses
+  Vcl.Forms,
+  main in 'main.pas' {Form1};
+
+{$R *.res}
+
+begin
+  System.ReportMemoryLeaksOnShutdown := True;
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

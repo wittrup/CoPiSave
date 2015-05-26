@@ -1,0 +1,47 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'CoPiSave'
+  ClientHeight = 49
+  ClientWidth = 258
+  Color = clBtnFace
+  Constraints.MaxHeight = 88
+  Constraints.MinHeight = 88
+  Constraints.MinWidth = 274
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Consolas'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnDblClick = FormDblClick
+  OnDestroy = FormDestroy
+  OnResize = FormResize
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Edit1: TLabeledEdit
+    Left = 8
+    Top = 24
+    Width = 242
+    Height = 21
+    EditLabel.Width = 192
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Auto save image in clipboard to:'
+    EditLabel.OnDblClick = FormDblClick
+    TabOrder = 0
+    OnDblClick = Edit1DblClick
+  end
+  object fod: TFileOpenDialog
+    FavoriteLinks = <>
+    FileTypes = <>
+    Options = [fdoPickFolders]
+    Left = 16
+  end
+  object TrayIcon1: TTrayIcon
+    Visible = True
+    OnDblClick = TrayIcon1DblClick
+    Left = 80
+  end
+end

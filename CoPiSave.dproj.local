@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.430,C:\Users\Witt\Dropbox\Programming\Delphi\2015-05 CoPiSave VCL\main.dfm=C:\Users\Witt\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.430,C:\Users\Witt\Dropbox\Programming\Delphi\2015-05 CoPiSave VCL\main.pas=C:\Users\Witt\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.708,C:\Users\Witt\Dropbox\Programming\Delphi\2015-05 CoPiSave VCL\CoPiSave.dproj=C:\Users\Witt\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.410,=C:\Users\Witt\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.012,=C:\Users\Witt\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
