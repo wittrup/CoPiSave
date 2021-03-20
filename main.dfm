@@ -3,11 +3,11 @@ object Form1: TForm1
   Top = 0
   BorderIcons = [biSystemMenu, biMinimize]
   Caption = 'CoPiSave'
-  ClientHeight = 49
+  ClientHeight = 95
   ClientWidth = 298
   Color = clBtnFace
-  Constraints.MaxHeight = 88
-  Constraints.MinHeight = 88
+  Constraints.MaxHeight = 134
+  Constraints.MinHeight = 134
   Constraints.MinWidth = 314
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -25,31 +25,35 @@ object Form1: TForm1
     Left = 0
     Top = 0
     Width = 298
-    Height = 49
+    Height = 95
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    object Edit1: TLabeledEdit
+    OnDblClick = FormDblClick
+    ExplicitHeight = 89
+    object PathOut: TLabeledEdit
       Left = 8
-      Top = 20
+      Top = 16
       Width = 281
       Height = 21
       EditLabel.Width = 282
       EditLabel.Height = 13
       EditLabel.Caption = 'Auto save image in clipboard to: (double-click)'
       TabOrder = 0
-      OnChange = Edit1Change
-      OnDblClick = Edit1DblClick
+      OnChange = EditChange
+      OnDblClick = PathOutDblClick
     end
-  end
-  object Panel2: TPanel
-    Left = 298
-    Top = 0
-    Width = 0
-    Height = 49
-    Align = alRight
-    Caption = 'Panel2'
-    TabOrder = 1
+    object EditSuffix: TLabeledEdit
+      Left = 8
+      Top = 64
+      Width = 281
+      Height = 21
+      EditLabel.Width = 36
+      EditLabel.Height = 13
+      EditLabel.Caption = 'Suffix'
+      TabOrder = 1
+      OnChange = EditChange
+    end
   end
   object fod: TFileOpenDialog
     FavoriteLinks = <>
